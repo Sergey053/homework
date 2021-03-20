@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+    <meta charset="UTF-8">  
+    <title>аренда автомобиля</title>
+ 
+ </head>
+
+ <body>
+     <section>
+         <h3> Анкета заявки на аренду автомобиля</h3>
+         <form  enctype="multipart/form-data"  action="#" method="POST">
+            <div>
+        
+                <input type="text" placeholder="Ваше имя " name="login"> <!--подсказки -->
+            </div>
+             <div>
+              <input type="email" placeholder="Укажите почтовый адрес" name="email">
+              </div>
+           
+            <div>
+                <!-- группа радиокнопок -->
+                <span>Аренда с водителем ?</span>
+                <label><input type="radio" name="read" value="yes">Да</label>
+                <label><input type="radio" name="read" value="no">нет</label>
+                
+            </div>
+            <div>
+                <label for="genre">Кузов </label>
+                <select id="genre" name="genre" >
+                    <option value="genre1">седан</option>
+                    <option value="genre2">хэтчбек</option>
+                    <option value="genre3">джип</option>
+
+                </select>
+           
+            </div>
+            <div>
+                <label for="genre">Коробка передач </label>
+                <select id="genre" name="genre" >
+                    <option value="genre1">автомат</option>
+                    <option value="genre2">механика</option>
+                  
+
+                </select>
+           
+            </div>
+            <div>
+                <label for="genre">Привод автомобиля </label>
+                <select id="genre" name="genre" >
+                    <option value="genre1">передний</option>
+                    <option value="genre2">задний</option>
+                    <option value="genre2">полный</option>
+                  
+
+                </select>
+           
+            </div>
+            <div>
+                <label for="page-count">Укажите количество дней аренды </label>
+                <input min="1" max="31" id="page-count" type="number" name="page-count" >
+            </div>
+            <div>
+                <!-- <label>Описание книги</label> -->
+                <textarea placeholder="цель аренды" name="description"></textarea>
+            </div>
+
+
+            
+            
+            
+            <!-- второй вариант создани кнопки submit,reset,button -->
+            <button type="submit">Отправить анкету</button>
+            <input type="reset" value="Очистить">
+
+         </form>
+     </section>
+
+  
+  
+ 
+ </body>
+</html>
+<!-- привязать кнопку вне формы и чтобы при нажатии данные из формы отправлялись
+сделать форму большую со всем -->

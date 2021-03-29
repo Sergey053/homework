@@ -1,0 +1,114 @@
+.margin {
+    margin: 10px;
+}
+.cover {
+    object-fit: cover;
+}
+.padding {
+    padding: 10px;
+    border: 1px solid #3E2723;
+}
+.white {
+    background-color: rgb(219, 232, 235);
+}
+.orange {
+    background-color: orange;
+}
+
+.space-between {
+    justify-content: space-between; /* выравнивание по низу*/
+}
+
+header {
+    background: rgb(192, 193, 245);
+}
+
+footer {
+    height: 100px;
+    background: rgb(128, 120, 230);
+    text-align: center;
+}
+main {
+    background: #3abfc9
+
+}
+aside {
+    background: #3abfc9;
+}
+
+
+/* flexbox: прижатый футер */
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 20px;
+    margin: 0;
+    color: #3E2723;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-block {
+    /* grow shrink basis */
+   flex: 1 0 auto;
+   flex-direction: row-reverse
+
+    
+
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+
+/* menu: nav a */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+
+.navbar-title {
+    display: inline-block; /* чтобы все были в строчку*/
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 6px solid transparent; /* сначала присваивается прозрачная рамка*/
+}
+
+.navbar-title:hover { /*только при наведении*/
+    border-bottom: 6px solid #f0e657; /* добавление рамки чтобы не прыгали*/
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #222923;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+.wrapper {
+    width: 1200px;
+    height: 100px;
+    border: 5px solid #515151;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 1rem;
+  }
+  .exmp2 {
+    background-image: url(../img/111.jfif);
+    background-repeat: no-repeat;
+       background-size: cover;
+  }
+
+  .height {
+      height: 100%;
+  }

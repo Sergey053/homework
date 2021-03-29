@@ -1,0 +1,20 @@
+.section-h2 {
+flex: 1 0 100%;
+}
+.book {
+    margin: 1rem;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.book h3 {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    right: 1rem;
+    background: seashell;
+    text-align: center;
+}
+.book p {
+    padding: 1rem;
+    max-width: 300;
+}

@@ -1,0 +1,54 @@
+/* body {
+    background-image: url("https://picsum.photos/1000/1000?random=1");
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+
+body:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    z-index: -1;
+}
+
+.authorization {
+    /* background-color: #EEE2DC; */
+    padding: 3rem;
+    text-align: center;
+}
+
+.authorization div {
+    margin-bottom: 1.3rem;
+}
+
+.authorization input[type="email"],
+.authorization input[type="password"] {
+    border-style: none;
+    outline-style: none;
+    background: transparent;
+    color: #314d1a;
+    font-size: 1.5rem;
+    border-bottom: 3px solid #314d1a;
+    border-radius: 0;
+}
+
+.authorization input[type="email"]:focus,
+.authorization input[type="password"]:focus {
+    color: #65dd8f;
+    border-bottom: 3px solid #65dd8f;
+}
+
+input::-webkit-input-placeholder {color: #314d1a}
+input::-moz-placeholder {color: #314d1a}
+
+input:focus::-webkit-input-placeholder {color: #65dd8f}
+input:focus::-moz-placeholder {color: #65dd8f}
+
+.authorization input[type="email"]:focus + .email,
+.authorization input[type="password"]:focus + .password {
+
+}

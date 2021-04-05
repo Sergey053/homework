@@ -1,0 +1,213 @@
+body {
+    font-size: 20px;
+    margin: 0;
+    background-color: rgba(121, 189, 143, 1);
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.image{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+
+
+
+
+main {
+    background-color: rgb(205, 236, 229);
+    color: #314d1a;
+}
+
+#right-aside,
+#left-aside {
+    background-color: rgb(205, 236, 229);
+}
+
+/* grid layout*/
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header" /* первый ряд */
+        "left main right" /* второй ряд */
+        "footer footer footer"; /* четвертый ряд */
+
+    grid-template-columns: 1fr minmax(500px, 1200px) 1fr;
+    grid-template-rows: 100px auto 10vh;
+}
+
+header {
+    grid-area: header;
+}
+
+#left-aside {
+    grid-area: left;
+}
+
+#right-aside {
+    grid-area: right;
+}
+
+main {
+    grid-area: main;
+}
+
+
+
+footer {
+    grid-area: footer;
+}
+
+
+.title {
+    grid-area: text;
+}
+
+.image {
+    grid-area: image;
+}
+
+.specifications {
+    grid-area: specifications;
+}
+
+.reviews {
+    grid-area: reviews;
+}
+
+.similar {
+    grid-area: similar;
+    display: flex;
+}
+.padding {
+    padding-top: 5rem;
+    border: none;
+}
+
+.dlinastolba {
+    justify-content:space-between;
+}
+.title {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.flex-1 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.marginz {
+    margin-right: 1rem;
+}
+@media screen and (max-width: 539px){
+    body {
+        grid-template: 
+        "header" 
+        "main"
+        "footer" 100px
+        /auto;
+    }  
+      header .container {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+         
+      }
+      header form {
+          display: none;
+      }
+      .navbar {
+          flex-direction: column;
+          line-height: 40px;
+      }
+      .navbar nav {
+          display: flex;
+          flex-direction: column;
+      }
+     
+     main h2 {
+         text-align: center;
+     }
+    main p {
+        text-align: center;
+    }
+    main article a {
+        margin-left: 1rem;
+    
+    }
+    .card1 {
+        margin: auto;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+          text-align: center;
+    }
+    .card1 img {
+        margin: auto;
+    }
+    .title {
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        color: #314d1a;
+    }
+    .padding {
+        padding-top: 2rem;
+     
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+  }
+  @media screen and (min-width: 540px) and (max-width: 800px) {
+    body {
+        grid-template: 
+        "header" 
+        "main"
+        "footer" 100px
+        /auto;
+    }  
+      header .container {
+          display: flex;
+          flex-direction: column;
+         
+      }
+      header form {
+          display: none;
+      }
+      .navbar {
+          flex-direction: column;
+      }
+      .title {
+          text-align: center;
+          margin-left: 1rem;
+      }
+      .card1 {
+        
+        margin-left: 1rem;
+        margin-right: 1rem;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+          text-align: center;
+  }
+  .card1 img {
+      margin-left: auto;
+      margin-right: auto;
+
+  }
+  main img {
+      margin: auto;
+  }
+  img {
+    width: 250px;
+    height: 250px;
+}
+ 
+}
